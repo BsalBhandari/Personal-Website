@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang=en"">
+<head>
+  <script src="https://kit.fontawesome.com/fb1fb86650.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  <meta charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  </style>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="img/logo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      
+    </nav>
+    <div class="front-text">
+      <p>Full-Stack Developer</p>
+      <h1>Hi, I'm <span>Bishal</span><br> Bhandari From Nepal</h1>
+    </div>
+  </div>
+  </div>
+
+<!-- ABOUT START HERE -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-column-1">
+        <img src="img/about.png">
+      </div>
+      <div class="about-column-2">
+        <h1 class="about-title">About Me</h1>
+        <p>Bishal Bhandari is a dedicated Computer Science student at Northern Kentucky University. With a strong background in
+        programming and a passion for technology, Bishal seeks opportunities to enhance his skills and contribute to a
+        progressive organization. He has experience in modifying backend software, managing consumer funds, and implementing SMS
+        integration. Bishal is proficient in Python, Java, Dart, and Basic, and has worked with technologies such as Flutter,
+        Firebase, Git, and Cloud. His projects include a note-taking app, an e-sport ecommerce app, and the development of an
+        Arduino racing car. Bishal's leadership skills were demonstrated as the Vice-President of the Robotics Club. Overall, he
+        is a talented and driven individual who is committed to continuous learning and making a meaningful impact in the field
+        of computer science.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>UI/UX</span><br>Desiging Web/App interfaces
+            </li>
+            <li>
+              <span>Web Development</span><br>Using HTML, CSS ,JS
+            </li>
+            <li>
+              <span>App Development</span><br>Building Android/iOS apps using Flutter</li>
+            <li>
+              <span>Backend Development</span><br>Using Firebase, Python
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>2022 - Present</span><br> Working as freelancer
+            </li>
+            <li>
+              <span>2020 - 2021</span><br>Vice-President at Robotics Club
+            </li>
+            <li>
+              <span>2019 - 2020</span><br>Internship at Aarati Multi-Purpose Co-operative</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2022 - Present</span><br>Undergraduate in C.S.
+            </li>
+            <li>
+              <span>2021</span><br> Majored in Science 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Portfolio section of website -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="about-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="img/work1.png">
+        <div class="layer">
+          <h3>Website Development
+          </h3>
+          <p>The website was created as my final project of Web Development. It is soley focused on blockchain and it's
+            features.</p>
+          <a href="https://github.com/BsalBhandari/webdev_final_project" target="_blank"><i
+              class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/work.png">
+        <div class="layer">
+          <h3>LeetCode Problems</h3>
+          <p>Here are some of the LeetCode problems implemented in Python. The solutions are organized by
+          problem category and include a brief explanation of the problem and the approach used to solve it.</p>
+          <a href="https://github.com/BsalBhandari/leetCode-Python" target="_blank"><i
+              class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/work2.png">
+        <div class="layer">
+          <h3>App Development</h3>
+          <p>A mobile Application made using Dart Language along with Flutter as it's framework. This App displays the time zone of different part of the world using the worldTime API.</p>
+          <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <a href="https://github.com/BsalBhandari/" target="_blank" class="btn">See more</a>
+  </div>
+</div>
+<!--COntact--> 
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> bsalbhandari073@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +1 (650)-582-8923</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/Bsalvandari12/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/beingbsal/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/BsalBhandari/" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bishal-bhandari-92305022b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="img/cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright ©️ Bishal 2023</p>
+  </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for (tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemeu.style.right = "0";
+  }
+  function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyd9NnI9u68WeCTYa_SAsgWCaPzQO5PPHhcW71Yt6bSDKPzYXKsfIpvyzYSuJWfzgIa/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML =""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
+
+
